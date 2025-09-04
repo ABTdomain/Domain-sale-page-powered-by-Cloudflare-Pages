@@ -1,0 +1,357 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.domain-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.2rem;
+    animation: fadeIn 0.8s ease;
+    opacity: 0.9;
+}
+
+h1.domain-name {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    min-height: 1.2em;
+    word-break: break-word;
+}
+.domain-name {
+    animation: fadeInScale 0.6s ease-out;
+    font-size: 3rem; 
+}
+
+
+
+.domain-price {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: slideUp 0.8s ease 0.2s both;
+    opacity: 0.95;
+}
+
+.price-badge {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    animation: slideUp 0.8s ease 0.3s both;
+    opacity: 0.9;
+}
+
+.minimal-theme .card {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.minimal-theme .price-badge,
+.minimal-theme .domain-badge {
+    background: rgba(0, 0, 0, 0.05);
+}
+.crypto-theme .card {
+    border: 2px solid rgba(0, 217, 255, 0.3);
+}
+
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: slideUp 0.8s ease 0.4s both;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.cta-button-secondary:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+.section {
+    padding: 0rem 0 1.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.section-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.minimal-theme .card {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.crypto-theme .card {
+    border: 2px solid rgba(0, 212, 255, 0.4); 
+}
+
+.royal-theme .card {
+    border: 2px solid rgba(255, 215, 0, 0.4);  
+}
+
+
+.payment-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+}
+
+.minimal-theme .payment-badge {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.crypto-theme .payment-badge {
+    border: 2px solid rgba(0, 212, 255, 0.4);
+}
+
+.royal-theme .payment-badge {
+    border: 2px solid rgba(255, 215, 0, 0.4);
+}
+a.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.minimal-theme a.card:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.crypto-theme a.card:hover {
+    border-color: rgba(0, 212, 255, 0.6);
+    box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3); 
+}
+
+.royal-theme a.card:hover {
+    border-color: rgba(255, 215, 0, 0.6);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3); 
+}
+
+
+.hero .cta-button-secondary:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;  
+}
+
+
+.label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-bottom: 0.25rem;
+}
+
+.value {
+    font-size: 1rem;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.payment-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+footer.creator-badge {
+    position: static; 
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(30,30,30,0.9));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+footer.creator-badge a {
+   color: #00D4FF;
+   text-decoration: none;
+   font-weight: 600;
+}
+footer.creator-badge a:hover {
+   text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+    }
+
+    h1.domain-name {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center; 
+
+    }
+
+    .domain-price {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .cta-button,
+    .cta-button-secondary {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+        text-align: center; 
+        display: block; 
+        margin: 0 auto;
+
+    }
+
+    .card {
+        padding: 1.25rem;
+        text-align: center; 
+    }
+
+    .payment-methods {
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    .payment-badge {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+    }
+
+    footer.creator-badge {
+        margin: 15px auto;
+        font-size: 0.75rem;
+        padding: 0.75rem 1.25rem;
+        text-align: center;
+        display: block; 
+    }
+}
