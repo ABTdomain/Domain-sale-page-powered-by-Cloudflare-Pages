@@ -37,6 +37,7 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 
 ## 🚀 Step 3: Deploy Your Site
 ### Cloudflare Pages (Recommended – Free)  
+**Method 1: Deploy from GitHub (easiest)**  
 1. Go to [Cloudflare Pages](https://pages.cloudflare.com)  
 2. **Create a project → Connect to Git**  
 3. Select your repository  
@@ -46,10 +47,15 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
    - **Build directory:** (leave empty)  
 5. Click **Save and Deploy**  
 6. Your site will be live at:  
-   ```
-   https://[project-name].pages.dev
-   ```
+https://[project-name].pages.dev
 
+**Method 2: Deploy by Upload (if you downloaded ZIP)**  
+1. Go to [Cloudflare Pages](https://pages.cloudflare.com)  
+2. **Create a project → Upload assets**  
+3. Upload **all contents** from your extracted project folder (after editing `config.js`)  
+4. Click **Deploy site**  
+5. Your site will be live at:  
+https://[project-name].pages.dev
 
 ## 🌍 Step 4: Custom Domain Setup
 To use your own domain (e.g., `yourdomain.com`):  
@@ -57,7 +63,7 @@ To use your own domain (e.g., `yourdomain.com`):
 2. Add your custom domain  
 3. Update DNS records:  
    - **CNAME** → point to your deployment URL  
-   - Or **A records** → as instructed by platform  
+   - Or **A records** → as instructed by platform  (normally point to 192.0.2.1)
 
 ---
 
