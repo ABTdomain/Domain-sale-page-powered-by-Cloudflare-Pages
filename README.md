@@ -4,9 +4,9 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 
 - ⚡ Ultra-fast global access (Cloudflare CDN)
 - 🔎 SEO optimized
-- 🎨 Multiple themes (6 templates available)
+- 🎨 Multiple Colors (12 colors available)
 - 🔒 Free SSL, zero-cost hosting
-- 🛠️ Easy configuration with a single HTML file
+- 🛠️ Easy configuration
 
 ---
 # 📖 Complete Usage Guide
