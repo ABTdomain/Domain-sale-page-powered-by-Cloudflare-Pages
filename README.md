@@ -80,3 +80,7 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 
 This project is licensed under the MIT License.
 While not required, we kindly request that you keep the "Powered by ABTDomain.com" footer link to help support this free project. Thank you!
+
+##live demo:
+https://domainpickup.com
+
