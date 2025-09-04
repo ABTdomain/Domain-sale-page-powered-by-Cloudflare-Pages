@@ -15,16 +15,6 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 ### 1. Prepare Files
 1.  Download the template.
 2.  Edit the `config.js` section as the introduction in it:
-
-    ```javascript
-    const DOMAIN_CONFIG = {
-      domain: "YourDomain.com",   // Your domain
-      price: "10,000",            // Sale price
-      currency: "USD",            // Currency
-      template: 1,                // Template (1–6)
-      // Other settings...
-    };
-    ```
 3.  Open `index.html` in your browser to preview.
 
 ### 2. Deploy on GitHub + Cloudflare Pages
