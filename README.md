@@ -1,6 +1,7 @@
 # 🌐 Domain Sale Landing Page
 
 live demo: https://domainpickup.com
+example: https://5.domainpickup.com
 
 A free and customizable **domain sale landing page** powered by [Cloudflare Pages](https://pages.cloudflare.com/).
 
