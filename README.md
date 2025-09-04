@@ -9,23 +9,94 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 - 🛠️ Easy configuration with a single HTML file
 
 ---
+📖 Complete Usage Guide
+Prerequisites
 
-## 🚀 Quick Start
+A GitHub account (free)
+5 minutes of setup time
 
-### 1. Prepare Files
-1.  Download the template.
-2.  Edit the `config.js` section as the introduction in it:
-3.  Open `index.html` in your browser to preview.
+Step 1: Get the Code
+Option A: Fork on GitHub (Recommended)
 
-### 2. Deploy on GitHub + Cloudflare Pages
-1.  Create a new GitHub repository and upload `index.html`.
-2.  On Cloudflare Pages, create a new project.
-3.  Connect your GitHub repo → select **None** for framework → leave build settings empty.
-4.  Deploy → get a free URL like: `https://domain-sale-xxx.pages.dev`
+Click the "Fork" button in the top right
+This creates your own copy of the project
 
-### 3. (Optional) Add Custom Domain
-1.  Add a subdomain (e.g. `forsale.yourdomain.com`).
-2.  Configure DNS (`CNAME` → your Cloudflare Pages URL).
+Option B: Download ZIP
+
+Click "Code" → "Download ZIP"
+Extract to your computer
+
+Step 2: Configure Your Domain
+Edit config.js file - all options are documented inside with clear comments.
+Step 3: Deploy Your Site
+Option A: Cloudflare Pages (Recommended - Free)
+
+Visit pages.cloudflare.com
+Click "Create a project" → "Connect to Git"
+Select your repository
+Deploy settings:
+
+Production branch: main
+Build command: (leave empty)
+Build directory: (leave empty)
+
+
+Click "Save and Deploy"
+Your site will be live at: https://[project-name].pages.dev
+
+Option B: Netlify (Free)
+
+Visit netlify.com
+Drag your project folder to the deployment area
+Site instantly goes live at: https://[random-name].netlify.app
+
+Option C: Vercel (Free)
+
+Visit vercel.com
+Import your GitHub repository
+Click "Deploy"
+Live at: https://[project-name].vercel.app
+
+Step 4: Custom Domain Setup
+To use your actual domain (e.g., yourdomain.com):
+
+In your hosting platform (Cloudflare/Netlify/Vercel)
+Go to Domain settings
+Add custom domain
+Update your DNS records:
+
+Add CNAME record pointing to your deployment URL
+Or use A records as instructed by platform
+
+
+
+Testing Checklist
+
+✅ Domain name displays correctly
+✅ Contact buttons work
+✅ Mobile responsive
+✅ PageSpeed score > 90
+✅ All links functional
+
+Troubleshooting
+Site not updating?
+
+Clear browser cache (Ctrl+F5)
+Wait 2-5 minutes for deployment
+
+Contact links not working?
+
+Telegram: Include @ symbol
+WhatsApp: Include country code without spaces
+
+Performance
+
+Loads in < 2 seconds globally
+PageSpeed score: 100/100
+Mobile optimized
+SEO ready with structured data
+
+Your domain sale page is ready! Total setup time: ~5 minutes.
 
 ---
 
