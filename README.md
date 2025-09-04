@@ -9,96 +9,87 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 - 🛠️ Easy configuration with a single HTML file
 
 ---
-📖 Complete Usage Guide
-Prerequisites
+# 📖 Complete Usage Guide
 
-A GitHub account (free)
-5 minutes of setup time
-
-Step 1: Get the Code
-Option A: Fork on GitHub (Recommended)
-
-Click the "Fork" button in the top right
-This creates your own copy of the project
-
-Option B: Download ZIP
-
-Click "Code" → "Download ZIP"
-Extract to your computer
-
-Step 2: Configure Your Domain
-Edit config.js file - all options are documented inside with clear comments.
-Step 3: Deploy Your Site
-Option A: Cloudflare Pages (Recommended - Free)
-
-Visit pages.cloudflare.com
-Click "Create a project" → "Connect to Git"
-Select your repository
-Deploy settings:
-
-Production branch: main
-Build command: (leave empty)
-Build directory: (leave empty)
-
-
-Click "Save and Deploy"
-Your site will be live at: https://[project-name].pages.dev
-
-Option B: Netlify (Free)
-
-Visit netlify.com
-Drag your project folder to the deployment area
-Site instantly goes live at: https://[random-name].netlify.app
-
-Option C: Vercel (Free)
-
-Visit vercel.com
-Import your GitHub repository
-Click "Deploy"
-Live at: https://[project-name].vercel.app
-
-Step 4: Custom Domain Setup
-To use your actual domain (e.g., yourdomain.com):
-
-In your hosting platform (Cloudflare/Netlify/Vercel)
-Go to Domain settings
-Add custom domain
-Update your DNS records:
-
-Add CNAME record pointing to your deployment URL
-Or use A records as instructed by platform
-
-
-
-Testing Checklist
-
-✅ Domain name displays correctly
-✅ Contact buttons work
-✅ Mobile responsive
-✅ PageSpeed score > 90
-✅ All links functional
-
-Troubleshooting
-Site not updating?
-
-Clear browser cache (Ctrl+F5)
-Wait 2-5 minutes for deployment
-
-Contact links not working?
-
-Telegram: Include @ symbol
-WhatsApp: Include country code without spaces
-
-Performance
-
-Loads in < 2 seconds globally
-PageSpeed score: 100/100
-Mobile optimized
-SEO ready with structured data
-
-Your domain sale page is ready! Total setup time: ~5 minutes.
+## ✅ Prerequisites
+- A GitHub account (free)  
+- ~5 minutes setup time  
 
 ---
+
+## 🛠 Step 1: Get the Code
+**Option A: Fork on GitHub (Recommended)**  
+1. Click **Fork** (top-right corner)  
+2. This creates your own copy of the project  
+
+**Option B: Download ZIP**  
+1. Click **Code → Download ZIP**  
+2. Extract on your computer  
+
+---
+
+## ⚙️ Step 2: Configure Your Domain
+- Open **`config.js`**  
+- Update the options (all settings are documented with comments)  
+
+---
+
+## 🚀 Step 3: Deploy Your Site
+### Cloudflare Pages (Recommended – Free)  
+1. Go to [Cloudflare Pages](https://pages.cloudflare.com)  
+2. **Create a project → Connect to Git**  
+3. Select your repository  
+4. Deployment settings:  
+   - **Production branch:** `main`  
+   - **Build command:** (leave empty)  
+   - **Build directory:** (leave empty)  
+5. Click **Save and Deploy**  
+6. Your site will be live at:  
+   ```
+   https://[project-name].pages.dev
+   ```
+
+
+## 🌍 Step 4: Custom Domain Setup
+To use your own domain (e.g., `yourdomain.com`):  
+1. On your hosting platform (Cloudflare/Netlify/Vercel), go to **Domain settings**  
+2. Add your custom domain  
+3. Update DNS records:  
+   - **CNAME** → point to your deployment URL  
+   - Or **A records** → as instructed by platform  
+
+---
+
+## 🧾 Testing Checklist
+- ✅ Domain name displays correctly  
+- ✅ Contact buttons work  
+- ✅ Mobile responsive  
+- ✅ PageSpeed score > 90  
+- ✅ All links functional  
+
+---
+
+## 🐞 Troubleshooting
+**Site not updating?**  
+- Clear browser cache (**Ctrl + F5**)  
+- Wait 2–5 minutes for redeployment  
+
+**Contact links not working?**  
+- **Telegram:** Must include `@`  
+- **WhatsApp:** Must include country code (no spaces)  
+
+---
+
+## ⚡ Performance
+- Loads globally in < 2s  
+- PageSpeed score: **100/100**  
+- Mobile optimized  
+- SEO ready with structured data  
+
+---
+
+✨ Your domain sale page is ready in just **~5 minutes**!  
+
 
 ## 🎨 Template Guide
 
