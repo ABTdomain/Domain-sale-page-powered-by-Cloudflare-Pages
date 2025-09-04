@@ -299,12 +299,16 @@ class DomainPage {
                     url = `https://www.afternic.com/domain/${this.config.domain}`;
                 } else if (marketplace === 'Atom') {
                     url = `https://www.atom.com/domains/${this.config.domain}`;
+                } else if (marketplace === 'NameClub') {
+                    url = `https://www.nameclub.com/domain/${this.config.domain}`;
+                } else if (marketplace === 'Saw') {
+                    url = `https://www.sawsells.com/domain/${this.config.domain}`;
                 }
 
                 html += `
-                            <a href="${url}" target="_blank" rel="noopener" class="card">
-                                <div class="value">${marketplace}.com</div>
-                            </a>`;
+                    <a href="${url}" target="_blank" rel="noopener" class="card">
+                        <div class="value">${marketplace}.com</div>
+                    </a>`;
             });
 
             html += `
