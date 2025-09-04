@@ -16,7 +16,7 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 1.  Download the template.
 2.  Create a folder (e.g. `my-domain-sale`).
 3.  Create `index.html` and paste the template code.
-4.  Edit the `DOMAIN_CONFIG` section:
+4.  Edit the `config.js` section as the introduction in it:
 
     ```javascript
     const DOMAIN_CONFIG = {
@@ -43,22 +43,28 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 
 ## 🎨 Template Guide
 
-- **Template 1 (Tech):** Blue/purple gradient (.io, .ai, .tech, .app)
-- **Template 2 (Finance):** Green/gold (finance/invest/trade)
-- **Template 3 (Creative):** Pink/orange (design/art/studio)
-- **Template 4 (Minimal):** Black & white (short/brand domains)
-- **Template 5 (Crypto):** Dark neon (crypto/NFT/Web3)
-- **Template 6 (Corporate):** Deep blue (corporate/consulting)
+- **Template 1 (Tech):** Purple/Blue gradient - Perfect for .io, .ai, .tech, .app domains
+- **Template 2 (Finance):** Green/Gold - Ideal for finance, invest, trade, money domains
+- **Template 3 (Creative):** Pink/Orange gradient - Great for design, art, studio, creative domains
+- **Template 4 (Minimal):** Black & White - Best for short, brand, premium domains
+- **Template 5 (Crypto):** Dark/Neon cyan - Perfect for crypto, NFT, Web3, blockchain domains
+- **Template 6 (Corporate):** Navy/Deep blue - Suitable for corporate, consulting, business domains
+- **Template 7 (Luxury):** Gold/Black - Ideal for luxury, premium, exclusive domains
+- **Template 8 (Ocean):** Blue/Cyan gradient - Perfect for marine, travel, water-related domains
+- **Template 9 (Sunset):** Red/Yellow gradient - Great for warm, friendly, community domains
+- **Template 10 (Dark):** Black/Gray - Best for gaming, tech, modern domains
+- **Template 11 (Nature):** Green gradient - Perfect for eco, organic, nature, health domains
+- **Template 12 (Royal):** Purple/Gold - Ideal for premium, regal, exclusive domains
 
 ---
 
 ## ✅ Checklist
 
-- [ ] Updated domain & price
-- [ ] Selected a template
-- [ ] Added contact info
-- [ ] Uploaded to GitHub
-- [ ] Deployed to Cloudflare Pages
+- [ ] Updated domain name in config.js
+- [ ] Set correct price and currency
+- [ ] Selected appropriate template (1-12)
+- [ ] Added at least 3 compelling features
+- [ ] Added contact information (email/telegram/whatsapp)
 
 ---
 
@@ -73,4 +79,4 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 ## 📜 License
 
 This project is licensed under the MIT License.
-You are free to use, modify, and distribute it, but you must keep the attribution in the footer.
+While not required, we kindly request that you keep the "Powered by ABTDomain.com" footer link to help support this free project. Thank you!
