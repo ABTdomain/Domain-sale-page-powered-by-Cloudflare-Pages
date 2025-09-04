@@ -92,7 +92,7 @@ To use your own domain (e.g., `yourdomain.com`):
 ✨ Your domain sale page is ready in just **~5 minutes**!  
 
 
-## 🎨 Template Guide
+## 🎨 Template Guide: live demo: https://domainpickup.com
 
 - **Template 1 (Tech):** Purple/Blue gradient - Perfect for .io, .ai, .tech, .app domains
 - **Template 2 (Finance):** Green/Gold - Ideal for finance, invest, trade, money domains
@@ -106,7 +106,7 @@ To use your own domain (e.g., `yourdomain.com`):
 - **Template 10 (Dark):** Black/Gray - Best for gaming, tech, modern domains
 - **Template 11 (Nature):** Green gradient - Perfect for eco, organic, nature, health domains
 - **Template 12 (Royal):** Purple/Gold - Ideal for premium, regal, exclusive domains
-##live demo: https://domainpickup.com
+
 ---
 
 ## ✅ Checklist
