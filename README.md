@@ -14,9 +14,7 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 
 ### 1. Prepare Files
 1.  Download the template.
-2.  Create a folder (e.g. `my-domain-sale`).
-3.  Create `index.html` and paste the template code.
-4.  Edit the `config.js` section as the introduction in it:
+2.  Edit the `config.js` section as the introduction in it:
 
     ```javascript
     const DOMAIN_CONFIG = {
@@ -27,7 +25,7 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
       // Other settings...
     };
     ```
-5.  Open `index.html` in your browser to preview.
+3.  Open `index.html` in your browser to preview.
 
 ### 2. Deploy on GitHub + Cloudflare Pages
 1.  Create a new GitHub repository and upload `index.html`.
