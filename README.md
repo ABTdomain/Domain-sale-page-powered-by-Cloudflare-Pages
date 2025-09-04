@@ -1,7 +1,7 @@
 # 🌐 Domain Sale Landing Page
 
-Live demo: <a href="https://domainpickup.com" target="_blank">domainpickup.com</a>  
-Example: <a href="https://5.domainpickup.com" target="_blank">5.domainpickup.com</a>
+Live demo: <a href="https://domainpickup.com" target="_blank">domainpickup.com</a>   (better open in a new tab)
+Example: <a href="https://5.domainpickup.com" target="_blank">5.domainpickup.com</a> (better open in a new tab)
 
 
 A free and customizable **domain sale landing page** powered by [Cloudflare Pages](https://pages.cloudflare.com/).
