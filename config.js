@@ -78,7 +78,7 @@ let DOMAIN_CONFIG = {
     
     // Domain marketplaces where your domain is listed.
     // Available options: "Sedo", "Afternic", "Atom"
-    marketplaces: ["Sedo", "Afternic", "Atom"],
+    marketplaces: ['Sedo', 'Afternic', 'Atom', 'NameClub', 'Saw'],
     
     // Accepted payment methods
     // Available options: "Escrow.com", "Bank Transfer", "Crypto", "PayPal"
