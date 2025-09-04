@@ -177,45 +177,106 @@ class DomainPage {
                     </div>
                 </section>`;
         }
+        const socialPlatforms = {
+            email: {
+                name: 'Email',
+                urlPrefix: 'mailto:',
+                urlSuffix: ''
+            },
+            telegram: {
+                name: 'Telegram',
+                urlPrefix: 'https://t.me/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            whatsapp: {
+                name: 'WhatsApp',
+                urlPrefix: 'https://wa.me/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace(/[^0-9]/g, '')
+            },
+            x: {
+                name: 'X (Twitter)',
+                urlPrefix: 'https://x.com/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            wechat: {
+                name: 'WeChat',
+                urlPrefix: '#',
+                urlSuffix: '',
+                isDisplay: true 
+            },
+            facebook: {
+                name: 'Facebook',
+                urlPrefix: 'https://facebook.com/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            discord: {
+                name: 'Discord',
+                urlPrefix: 'https://discord.gg/',
+                urlSuffix: ''
+            },
+            linkedin: {
+                name: 'LinkedIn',
+                urlPrefix: 'https://linkedin.com/in/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('https://linkedin.com/in/', '').replace('/', '')
+            },
+            instagram: {
+                name: 'Instagram',
+                urlPrefix: 'https://instagram.com/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            youtube: {
+                name: 'YouTube',
+                urlPrefix: 'https://youtube.com/@',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            github: {
+                name: 'GitHub',
+                urlPrefix: 'https://github.com/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('@', '')
+            },
+            reddit: {
+                name: 'Reddit',
+                urlPrefix: 'https://reddit.com/u/',
+                urlSuffix: '',
+                cleanValue: (v) => v.replace('/u/', '').replace('u/', '')
+            }
+        };
 
-        if (this.config.contact.email || this.config.contact.telegram || this.config.contact.whatsapp || this.config.contact.x) {
+        if (this.config.contact && Object.keys(this.config.contact).some(key => this.config.contact[key])) {
             html += `
                 <section class="section" id="contact">
                     <div class="container">
                         <h2 class="section-title">Get In Touch</h2>
                         <div class="grid">`;
-
-            if (this.config.contact.email) {
-                html += `
-                            <a href="mailto:${this.config.contact.email}" class="card">
-                                <div class="label">Email</div>
-                                <div class="value">${this.config.contact.email}</div>
+            Object.keys(this.config.contact).forEach(key => {
+                const value = this.config.contact[key];
+                if (value && socialPlatforms[key]) {
+                    const platform = socialPlatforms[key];
+                    const cleanedValue = platform.cleanValue ? platform.cleanValue(value) : value;
+                    if (platform.isDisplay) {
+                        html += `
+                            <div class="card">
+                                <div class="label">${platform.name}</div>
+                                <div class="value">${value}</div>
+                            </div>`;
+                    } else {
+                        const url = `${platform.urlPrefix}${cleanedValue}${platform.urlSuffix}`;
+                        html += `
+                            <a href="${url}" target="_blank" rel="noopener" class="card">
+                                <div class="label">${platform.name}</div>
+                                <div class="value">${value}</div>
                             </a>`;
-            }
-
-            if (this.config.contact.telegram) {
-                html += `
-                            <a href="https://t.me/${this.config.contact.telegram.replace('@', '')}" target="_blank" rel="noopener" class="card">
-                                <div class="label">Telegram</div>
-                                <div class="value">${this.config.contact.telegram}</div>
-                            </a>`;
-            }
-
-            if (this.config.contact.whatsapp) {
-                html += `
-                            <a href="https://wa.me/${this.config.contact.whatsapp.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener" class="card">
-                                <div class="label">WhatsApp</div>
-                                <div class="value">${this.config.contact.whatsapp}</div>
-                            </a>`;
-            }
-
-            if (this.config.contact.x) {
-                html += `
-                            <a href="https://x.com/${this.config.contact.x.replace('@', '')}" target="_blank" rel="noopener" class="card">
-                                <div class="label">X (Twitter)</div>
-                                <div class="value">${this.config.contact.x}</div>
-                            </a>`;
-            }
+                    }
+                }
+            });
 
             html += `
                         </div>
