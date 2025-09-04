@@ -12,7 +12,8 @@ A free and customizable **domain sale landing page** powered by [Cloudflare Page
 # 📖 Complete Usage Guide
 
 ## ✅ Prerequisites
-- A GitHub account (free)  
+- A GitHub account (free)
+- A Cloudflare account (free)
 - ~5 minutes setup time  
 
 ---
@@ -105,7 +106,7 @@ To use your own domain (e.g., `yourdomain.com`):
 - **Template 10 (Dark):** Black/Gray - Best for gaming, tech, modern domains
 - **Template 11 (Nature):** Green gradient - Perfect for eco, organic, nature, health domains
 - **Template 12 (Royal):** Purple/Gold - Ideal for premium, regal, exclusive domains
-
+##live demo: https://domainpickup.com
 ---
 
 ## ✅ Checklist
@@ -122,7 +123,7 @@ To use your own domain (e.g., `yourdomain.com`):
 
 - **Deployment failed?** → Make sure `index.html` is in the root folder.
 - **Page not updating?** → Wait 1–2 minutes or clear your browser cache.
-- **Change theme?** → Update the `template` value (1–6) in your config.
+- **Change theme?** → Update the `template` value (1–12) in your config.
 
 ---
 
@@ -131,6 +132,5 @@ To use your own domain (e.g., `yourdomain.com`):
 This project is licensed under the MIT License.
 While not required, we kindly request that you keep the "Powered by ABTDomain.com" footer link to help support this free project. Thank you!
 
-##live demo:
-https://domainpickup.com
+
 
