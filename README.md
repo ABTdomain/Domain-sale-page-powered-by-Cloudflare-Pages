@@ -52,7 +52,7 @@ https://[project-name].pages.dev
 **Method 2: Deploy by Upload (if you downloaded ZIP)**  
 1. Go to [Cloudflare Pages](https://pages.cloudflare.com)  
 2. **Create a project → Upload assets**  
-3. Upload **all contents** from your extracted project folder (after editing `config.js`)  
+3. Upload **folder** select your extracted project folder (after editing `config.js`)  
 4. Click **Deploy site**  
 5. Your site will be live at:  
 https://[project-name].pages.dev
